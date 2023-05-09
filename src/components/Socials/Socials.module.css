@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(var(--color-light), 0.2);
+
+  border: 1px solid rgba(var(--color-light));
+  border-radius: 32px;
+
+  width: 320px;
+  height: 80px;
+}
+
+.container > a {
+    padding: 0 16px;
+}

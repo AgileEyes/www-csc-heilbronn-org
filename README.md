@@ -1,3 +1,23 @@
+# Design
+
+## Colors
+
+| Name      | Hex    | RGB           |
+|-----------|--------|---------------|
+| Accent    | DAC7A4 | 218, 199, 164 |
+| Primary   | 686C54 | 104, 108, 84  |
+| Secondary | 8E8568 | 142, 133, 104 |
+| Neutral   | EEF2DA | 238, 242, 218 |
+| Counter   | E74C3C | 231, 76, 60   |
+| Light     | FFFFFF | 255, 255, 255 |
+| Dark      | 000000 | 0, 0, 0       |
+| Header    | D9D9D9 | 217, 217, 217 |
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

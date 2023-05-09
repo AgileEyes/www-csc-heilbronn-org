@@ -1,95 +1,48 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import classNames from './page.module.css'
+import Hero, { HeroProps } from '@/components/Hero'
+import { CardProps } from '@/components/Card'
+import Cards from '@/components/Cards'
+
+const heroProps: HeroProps = {
+  title: "Herzlich Willkommen beim Cannabis Social Club Heilbronn!",
+  description: "Wir sind eine leidenschaftliche Community von Cannabis-Enthusiasten, die sich zum Ziel gesetzt hat, eine sichere und vertrauenswürdige Anlaufstelle für alle zu sein, die sich für Cannabis interessieren und es auf verantwortungsvolle Weise genießen möchten.",
+  backgroundImageSource: "/images/verein/hero_background.png"
+}
+
+const cards: CardProps[] = [
+  {
+    title: "Unser Versprechen",
+    descriptions: [
+      "Unser Fokus liegt dabei auf hoher Qualität, umfassender Bildung, einem freundlichen Miteinander und fairen Preisen. Wir möchten, dass jeder Mensch das Recht hat, sich über Cannabis zu informieren und seine Entscheidungen auf Basis von Wissen und Erfahrung zu treffen.",
+      "Unser Angebot umfasst eine breite Palette an hochwertigen Produkten und einer umfassenden Aufklärung über alles Wissenswerte rund um Cannabis. Wir möchten unseren Mitgliedern dabei helfen, ihre Cannabis-Erfahrungen zu optimieren und auf ein neues Level zu bringen. Dabei legen wir großen Wert auf eine offene, freundliche Atmosphäre und ein respektvolles Miteinander."
+    ],
+    imageSource: "/images/verein/cannabis_afro_genetics.png"
+  },
+  {
+    title: "Unsere Community",
+    descriptions: [
+      "Wir sind nicht nur ein Club, sondern eine lebendige Community, die sich durch den Austausch von Erfahrungen und Wissen weiterentwickelt. Wir setzen uns für eine offene, tolerante Gesellschaft ein.",
+      "Wir sind nicht nur ein Club, sondern eine lebendige Community, die sich durch den Austausch von Erfahrungen und Wissen weiterentwickelt. Wir setzen uns für eine offene, tolerante Gesellschaft ein."
+    ],
+    imageSource: "/images/verein/community.png"
+  },
+  {
+    title: "Social Media",
+    descriptions: [
+      "Folgt uns auf Instagram unter dem Hashtag #CannabisSocialClubHeilbronn, um auf dem Laufenden zu bleiben und weitere spannende Informationen rund um Cannabis und unseren Club zu erhalten. Verwendet auch gerne die Hashtags #CSCHeilbronn, #HighQuality, #CannabisCommunity, #CannabisEducation, #FriendlyVibes und #FairPrices, um uns zu unterstützen und mit anderen Cannabis-Enthusiasten zu vernetzen. Wir freuen uns darauf, euch auf unserem Weg begleiten zu dürfen!"
+    ],
+    imageSource: "/images/verein/qr_website_transparent.png"
+  }
+]
 
 export default function Home() {
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <main className={classNames.main}>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Hero {...heroProps} />
 
-      <div className={styles.grid}>
-        <a
-          href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Cards cards={cards} />
     </main>
   )
 }

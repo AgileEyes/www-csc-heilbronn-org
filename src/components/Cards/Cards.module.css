@@ -1,0 +1,8 @@
+.container {
+}
+
+@media screen and (max-width: 900px) {
+  .container > *:last-child > div:last-child {
+    display: none;
+  }
+}
