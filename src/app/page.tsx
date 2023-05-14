@@ -22,7 +22,7 @@ const cards: CardProps[] = [
     title: "Unsere Community",
     descriptions: [
       "Wir sind nicht nur ein Club, sondern eine lebendige Community, die sich durch den Austausch von Erfahrungen und Wissen weiterentwickelt. Wir setzen uns für eine offene, tolerante Gesellschaft ein.",
-      "Wir sind nicht nur ein Club, sondern eine lebendige Community, die sich durch den Austausch von Erfahrungen und Wissen weiterentwickelt. Wir setzen uns für eine offene, tolerante Gesellschaft ein."
+      "Gleichzeitig ist uns der Jugendschutz besonders wichtig. Wir setzen uns dafür ein, dass Minderjährige keinen Zugang zu Cannabis haben und bieten Aufklärung und Prävention an."
     ],
     imageSource: "/images/verein/community.png"
   },
