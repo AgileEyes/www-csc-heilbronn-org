@@ -40,6 +40,7 @@
 
 .itemActive {
   font-weight: 700;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 900px) {
