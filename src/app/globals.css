@@ -13,7 +13,7 @@
   /*
         TYPOGRAPHY
   */
-  /*  Obsolete: Variable set via next/font/google. 
+  /*  Obsolete: Variable set vinext/font/google. 
     --font-family: 'Alumni Sans';
   */
 
@@ -110,7 +110,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: rgb(var(--color-dark));
   text-decoration: none;
 }
 
