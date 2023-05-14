@@ -14,8 +14,11 @@
 | Header    | D9D9D9 | 217, 217, 217 |
 
 
-
-
+# How To
+- Search and Replace class names generated when exporting from Google Docs:
+    - Search for regex: `class="([c]+[a-zA-Z0-9_.-]*)"`
+    - Replace with regex: `className={classNames.$1}`
+    - Add `.container` parent selector to non-pure selectors, e.g.: `.container h6`
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
