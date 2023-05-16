@@ -14,7 +14,7 @@ export default function Satzung() {
         return <main className={classNames.container}>
                 <Hero {...heroProps} />
 
-                <div>
+                <div className={classNames.download}>
                         <a href="https://link.csc-heilbronn.org/doc/satzung">Hier über Google Drive downloaden.</a>
                 </div>
 
