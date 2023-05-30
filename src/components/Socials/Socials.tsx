@@ -15,5 +15,8 @@ export default function Socials() {
         <a href="https://www.facebook.com/CSCHeilbronn" target="_blank" rel="noopener noreferrer">
             <Image src="/images/socials/facebook.svg" width={32} height={32} alt='Facebook' />
         </a>
+        <a href="https://www.linkedin.com/company/csc-heilbronn" target="_blank" rel="noopener noreferrer">
+            <Image src="/images/socials/linkedin.svg" width={24} height={24} alt='LinkedIn' />
+        </a>
     </div>
 }

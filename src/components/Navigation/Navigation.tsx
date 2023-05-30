@@ -18,12 +18,12 @@ function MenuItem({ href, title, isActive }: MenuItemPropsInternal) {
         rel: "noopener noreferrer"
     } : undefined
 
-    return <Link
+    return <label htmlFor="menu"><Link
         href={href}
         className={isActive ? classNames.itemActive : undefined}
         {...additionalProps}>
         {title}
-    </Link>
+    </Link></label>
 }
 
 interface MenuProps {
