@@ -1,9 +1,9 @@
-import Navigation from "@/components/Navigation";
-import "./globals.css";
 import { Alumni_Sans } from "next/font/google";
-import Footer from "@/components/Footer";
+import "./globals.css";
+import Navigation from "@/components/Navigation";
 import VerticalSeparator from "@/components/Separator/VerticalSeparator";
 import Socials from "@/components/Socials";
+import Footer from "@/components/Footer";
 
 const alumniSans = Alumni_Sans({
   subsets: ["latin"],
