@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Alumni_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
@@ -34,6 +35,21 @@ export default function RootLayout({
           <VerticalSeparator size="32px" />
           <Footer />
         </div>
+
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-GV1MVJLQV5"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-GV1MVJLQV5');
+        `}
+        </Script>
       </body>
     </html>
   );
