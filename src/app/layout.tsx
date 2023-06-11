@@ -4,8 +4,9 @@ import Navigation from "@/components/Navigation";
 import VerticalSeparator from "@/components/Separator/VerticalSeparator";
 import Socials from "@/components/Socials";
 import Footer from "@/components/Footer";
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
+import AgeGuard from "@/components/AgeGuard";
 
 const alumniSans = Alumni_Sans({
   subsets: ["latin"],
@@ -13,8 +14,10 @@ const alumniSans = Alumni_Sans({
 });
 
 export const metadata = {
-  title: "TenTen Cannabis Social Club Heilbronn e.V. | Cannabis-Community in Heilbronn",
-  description: "Willkommen beim TenTen Cannabis Social Club Heilbronn e.V. – Ihr Anlaufpunkt für Cannabis-Informationen, -Aufklärung und -Community in Heilbronn. Werden Sie noch heute Teil unserer Gemeinschaft!",
+  title:
+    "TenTen Cannabis Social Club Heilbronn e.V. | Cannabis-Community in Heilbronn",
+  description:
+    "Willkommen beim TenTen Cannabis Social Club Heilbronn e.V. – Ihr Anlaufpunkt für Cannabis-Informationen, -Aufklärung und -Community in Heilbronn. Werden Sie noch heute Teil unserer Gemeinschaft!",
 };
 
 export default function RootLayout({
@@ -37,6 +40,7 @@ export default function RootLayout({
           <VerticalSeparator size="32px" />
           <Footer />
 
+          <AgeGuard />
           <CookieBanner />
         </div>
       </body>
