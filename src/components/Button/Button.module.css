@@ -1,0 +1,22 @@
+.container {
+  all: unset;
+
+  padding: 8px;
+
+  height: 48px;
+  line-height: 32px;
+
+  color: white;
+  font-size: 24px;
+
+  background-color: rgb(111, 111, 237);
+  border-radius: 8px;
+  border: 1px solid rgb(24, 24, 90);
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    height: 32px;
+    line-height: 32px;
+  }
+}
