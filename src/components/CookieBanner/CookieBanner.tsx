@@ -48,7 +48,7 @@ export default function CookieBanner() {
           className={styles.declineButton}
           onClick={() => setCookieConsent(false)}
         >
-          Cookies ablehnen
+          Ablehnen
         </button>
 
         <Separator type="horizontal" size="8px" />
@@ -57,7 +57,7 @@ export default function CookieBanner() {
           className={styles.allowButton}
           onClick={() => setCookieConsent(true)}
         >
-          Cookies erlauben
+          Erlauben
         </button>
       </div>
     </div>
