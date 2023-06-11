@@ -57,6 +57,7 @@ export default function Navigation() {
         <Menu items={[
             { href: "/", title: "Verein" },
             { href: "http://link.csc-heilbronn.org/form/mitgliedsanfrage", title: "Mitglied werden" },
+            { href: "/gruender", title: "Gründer" },
             { href: "/satzung", title: "Satzung" },
             { href: "/partners", title: "Partner" },
             { href: "https://linktr.ee/csc_heilbronn", title: "Kontakt" },
