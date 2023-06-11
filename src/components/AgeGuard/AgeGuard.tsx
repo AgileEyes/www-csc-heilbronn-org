@@ -50,12 +50,12 @@ export default function AgeGuard() {
 
       <div className={classNames.title}>Schon 18?</div>
       <p className={classNames.description}>
-        Wir möchten gerne jugendliche vor möglichen Gefahren des Verzehrs von
+        Wir möchten gerne Jugendliche vor möglichen Gefahren des Verzehrs von
         Cannabis schützen, da besonders bei der geistigen Entwicklung
         potenzielle und dauerhafte Schäden auftreten könnten.
         <br />
         <br />
-        Um dem vorzubeugen ist der Zugriff auf diese Website für Menschen unter
+        Um dem vorzubeugen, ist der Zugriff auf diese Website für Menschen unter
         18 Jahren aktuell nicht gestattet.
       </p>
 
