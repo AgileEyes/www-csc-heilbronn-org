@@ -5,6 +5,7 @@ import styles from "./CookieBanner.module.css";
 import { getLocalStorage, setLocalStorage } from "@/lib/storageHelper";
 import { useState, useEffect } from "react";
 import Separator from "../Separator";
+import Button from "../Button";
 
 export default function CookieBanner() {
   const [cookieConsent, setCookieConsent] = useState(false);
@@ -13,7 +14,7 @@ export default function CookieBanner() {
     const storedCookieConsent = getLocalStorage("cookie_consent", null);
 
     setCookieConsent(storedCookieConsent);
-  }, [setCookieConsent]);
+  }, []);
 
   useEffect(() => {
     const newValue = cookieConsent ? "granted" : "denied";
@@ -23,9 +24,6 @@ export default function CookieBanner() {
     });
 
     setLocalStorage("cookie_consent", cookieConsent);
-
-    //For Testing
-    console.log("Cookie Consent: ", cookieConsent);
   }, [cookieConsent]);
 
   if (cookieConsent !== null) return null;
@@ -44,21 +42,11 @@ export default function CookieBanner() {
       <Separator type="horizontal" size="16px" />
 
       <div className={styles.buttons}>
-        <button
-          className={styles.declineButton}
-          onClick={() => setCookieConsent(false)}
-        >
-          Ablehnen
-        </button>
+        <Button onClick={() => setCookieConsent(false)} text="Ablehnen" />
 
         <Separator type="horizontal" size="8px" />
 
-        <button
-          className={styles.allowButton}
-          onClick={() => setCookieConsent(true)}
-        >
-          Erlauben
-        </button>
+        <Button onClick={() => setCookieConsent(true)} text="Erlauben" />
       </div>
     </div>
   );
