@@ -1,10 +1,11 @@
-import Script from "next/script";
 import { Alumni_Sans } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import VerticalSeparator from "@/components/Separator/VerticalSeparator";
 import Socials from "@/components/Socials";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from "@/components/CookieBanner/CookieBanner";
 
 const alumniSans = Alumni_Sans({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
       <body className={alumniSans.className}>
         <Navigation />
 
@@ -34,22 +36,9 @@ export default function RootLayout({
 
           <VerticalSeparator size="32px" />
           <Footer />
+
+          <CookieBanner />
         </div>
-
-        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-GV1MVJLQV5"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-GV1MVJLQV5');
-        `}
-        </Script>
       </body>
     </html>
   );
