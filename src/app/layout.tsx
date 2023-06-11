@@ -4,6 +4,8 @@ import Navigation from "@/components/Navigation";
 import VerticalSeparator from "@/components/Separator/VerticalSeparator";
 import Socials from "@/components/Socials";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from "@/components/CookieBanner/CookieBanner";
 
 const alumniSans = Alumni_Sans({
   subsets: ["latin"],
@@ -22,6 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
       <body className={alumniSans.className}>
         <Navigation />
 
@@ -33,6 +36,8 @@ export default function RootLayout({
 
           <VerticalSeparator size="32px" />
           <Footer />
+
+          <CookieBanner />
         </div>
       </body>
     </html>

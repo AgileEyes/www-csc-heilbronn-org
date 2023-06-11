@@ -1,0 +1,56 @@
+.container {
+    position: fixed;
+
+    padding: 16px 32px;
+
+    display: flex;
+
+    bottom: 16px;
+    width: 1080px;
+    height: 92px;
+    line-height: 60px;
+
+    z-index: 99999;
+
+    background-color :rgb(24, 24, 90);
+    border-radius: 8px;
+
+}
+
+.infoText, .infoText a {
+    color: white !important;
+    font-size: 32px;
+}
+
+.cookieText {
+    text-decoration: underline;
+    color: rgb(111, 111, 237);
+}
+
+.buttons {
+    display: flex;    
+}
+
+.buttons > button {
+    all: unset;
+
+    padding: 8px;
+
+    height: 48px;
+    line-height: 32px;
+
+    color: white;
+    font-size: 24px;
+
+    background-color: rgb(111, 111, 237);
+    border-radius: 8px;
+    border: 1px solid rgb(24, 24, 90);
+}
+
+.declineButton {
+
+}
+
+.allowButton {
+
+}
