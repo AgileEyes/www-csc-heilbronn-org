@@ -46,7 +46,7 @@ export default function Navigation() {
     return <nav className={classNames.container}>
 
 
-        <Image src="/images/logo/logo_128.png" alt="CSC Heilbronn Logo" width={92} height={92} />
+        <Image src="/images/logo/logo_v2_128.png" alt="CSC Heilbronn Logo" width={92} height={92} />
 
         <span className={classNames.title}>CSC Heilbronn</span>
 

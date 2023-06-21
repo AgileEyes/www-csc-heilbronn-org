@@ -41,7 +41,7 @@ export default function AgeGuard() {
 
       <div className={classNames.imageWrapper}>
         <Image
-          src="/images/logo/logo_128.png"
+          src="/images/logo/logo_v2_128.png"
           alt="CSC Heilbronn Logo"
           width={92}
           height={92}
