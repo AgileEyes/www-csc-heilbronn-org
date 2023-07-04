@@ -42,11 +42,11 @@ export default function CookieBanner() {
       <Separator type="horizontal" size="16px" />
 
       <div className={styles.buttons}>
-        <Button onClick={() => setCookieConsent(false)} text="Ablehnen" />
+        <Button kind="secondary" onClick={() => setCookieConsent(false)} text="Ablehnen" />
 
         <Separator type="horizontal" size="8px" />
 
-        <Button onClick={() => setCookieConsent(true)} text="Erlauben" />
+        <Button kind="primary" onClick={() => setCookieConsent(true)} text="Erlauben" />
       </div>
     </div>
   );
