@@ -43,7 +43,7 @@ export default function AgeGuard() {
           height={92}
         />
 
-        <Separator type="vertical" size="32px" />
+        <Separator type="vertical" size="8px" />
 
         <div className={classNames.pageTitle}>
           TenTen Cannabis Social Club Heilbronn
@@ -57,8 +57,11 @@ export default function AgeGuard() {
           Wir möchten gerne Jugendliche vor möglichen Gefahren des Verzehrs von
           Cannabis schützen, da besonders bei der geistigen Entwicklung
           potenzielle und dauerhafte Schäden auftreten könnten.
-          <br />
-          <br />
+        </p>
+
+        <Separator type="vertical" size="8px" />
+
+        <p className={classNames.description}>
           Um dem vorzubeugen, ist der Zugriff auf diese Website für Menschen
           unter 18 Jahren aktuell nicht gestattet.
         </p>
