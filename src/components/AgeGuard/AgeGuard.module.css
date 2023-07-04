@@ -1,40 +1,44 @@
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   position: fixed;
-
-  padding: 32px;
-
   top: 0;
 
   width: 100%;
   height: 100%;
 
-  background-color: rgba(24, 24, 90, 1);
+  background-color: #000000;
 
   z-index: 999999;
 
-  color: white;
+  color: #686C54;
+
+  background-image: url("/images/background/pattern_256x191_10.png");
+}
+
+.containerInner {
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   text-align: center;
+
+  max-width: 1024px;
 }
 
 .pageTitle {
   font-size: 48px;
 }
 
-.imageWrapper {
-  margin: 8px 0;
-  width: 256px;
-  background: rgba(111, 111, 237, 0.1);
-  border-radius: 1024px;
-}
-
 .title {
   font-size: 48px;
+
+  color: #FFFFFF;
 }
 
 .description {
@@ -57,4 +61,16 @@
 
 .buttons {
   display: flex;
+}
+
+@media screen and (max-width: 640px) {
+  .pageTitle {
+    width: 240px;
+    font-size: 24px;
+  }
+
+  .description {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

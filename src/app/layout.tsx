@@ -1,4 +1,4 @@
-import { Alumni_Sans } from "next/font/google";
+import { Red_Hat_Text } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import VerticalSeparator from "@/components/Separator/VerticalSeparator";
@@ -8,7 +8,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import AgeGuard from "@/components/AgeGuard";
 
-const alumniSans = Alumni_Sans({
+const font = Red_Hat_Text({
   subsets: ["latin"],
   variable: "--font-family",
 });
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
-      <body className={alumniSans.className}>
+      <body className={font.className}>
         <Navigation />
 
         <div id="page-wrap">
