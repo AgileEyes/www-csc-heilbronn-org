@@ -26,7 +26,7 @@ const members: Member[] = [
     name: "Oliver Molnar",
     image: "/images/gruender/julian.jpg",
     description:
-      "Oliver ist der Schatzmeister des Vereins und für die Finanzen verantwortlich. Zusätzlich ist er für das Themenfeld IT zuständig. Auch ist er Datenschutzbeauftragter des Vereins und für die Entwicklung der Website zuständig.",
+      "Oliver ist der Schatzmeister des Vereins und für die Finanzen verantwortlich. Zusätzlich ist er für das Themenfeld IT zuständig. Auch ist er Datenschutzbeauftragter des Vereins und Entwickler dieser Website.",
   },
 ];
 
