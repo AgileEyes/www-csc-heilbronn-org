@@ -18,6 +18,27 @@ const cards: CardProps[] = [
         imageSource: "/images/partner/afro-genetics.png"
     },
     {
+        title: "Medusafilters",
+        descriptions: [
+            "Filter sind unerlässlich, wenn es darum geht die Schäden beim Rauchen zu reduzieren. Daher sind wir stolz auf unseren Partner Medusafilters. Unsere Mitglieder klären wir über die Vorteile von Aktivkohlefiltern auf und bieten ihnen die Möglichkeit, diese zu einem vergünstigten Preis zu erwerben."
+        ],
+        imageSource: "/images/partner/medusafilters.png"
+    },
+    {
+        title: "420cloud",
+        descriptions: [
+            "Für eine ordentliche und moderne Administration braucht es eine Vereinssoftware. 420cloud hilft uns dabei, unsere Mitglieder zu verwalten und die Kommunikation zu vereinfachen."
+        ],
+        imageSource: "/images/partner/420cloud.webp"
+    },
+    {
+        title: "CSC Maps",
+        descriptions: [
+            "Unser Partner CSC Maps hilft Cannabis Interessenten einfachen Zugang zu Informationen über Cannabis Social Clubs anzubieten. Dabei werden die CSCs auf einer Karte angezeigt und können nach verschiedenen Kriterien gefiltert werden. Optimal für alle, die einen CSC in ihrer Nähe suchen."
+        ],
+        imageSource: "/images/partner/csc-maps.jpg"
+    },
+    {
         title: "Cannabis Social Club 76",
         descriptions: [
             "Ein aus der Region Baden-Baden frisch etablierter Cannabis Social Club deren Gründer seit Jahren äußerst gute private und berufliche Beziehung zu uns pflegt."
