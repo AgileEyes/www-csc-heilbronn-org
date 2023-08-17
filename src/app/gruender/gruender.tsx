@@ -20,7 +20,7 @@ const members: Member[] = [
     name: "\"Emin\" Qerkin Sadiku",
     image: "/images/gruender/julian.jpg",
     description:
-      "Qerkin ist der zweite Vorsitzende des Vereins. Neben der Hilfe beim operativen Tagesgeschäft ist er ist für die Organisation von und Bewirtung bei Vereinsereignissen zuständig.",
+      "Emin ist der zweite Vorsitzende des Vereins. Neben der Hilfe beim operativen Tagesgeschäft ist er ist für die Organisation von und Bewirtung bei Vereinsereignissen zuständig.",
   },
   {
     name: "Oliver Molnar",
