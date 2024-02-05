@@ -60,6 +60,7 @@ export default function eFlyer() {
           <li>
             30 EUR <span className={classNames.decent}>monatlich</span>
           </li>
+          <li>Max. 100 Plätze</li>
           <li>
             Priorität
             <ul className={classNames.sub_benefits}>
@@ -68,7 +69,13 @@ export default function eFlyer() {
               <li>Events (VIP) zukünftig Besuche im Growbereich</li>
             </ul>
           </li>
-          <li>Max. 100 Plätze</li>
+          <li>
+            Mitbestimmung
+            <ul className={classNames.sub_benefits}>
+              <li>Strainauswahl</li>
+              <li>Equipment</li>
+            </ul>
+          </li>
         </ul>
 
         <div className={classNames.links}>
