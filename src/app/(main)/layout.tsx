@@ -7,7 +7,6 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner/CookieBanner";
 import AgeGuard from "@/components/AgeGuard";
-import { Suspense } from "react";
 
 const alumniSans = Alumni_Sans({
   subsets: ["latin"],
@@ -28,9 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Suspense>
-        <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
-      </Suspense>
+      <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
 
       <body className={alumniSans.className}>
         <Navigation />
@@ -45,7 +42,7 @@ export default function RootLayout({
           <Footer />
 
           <AgeGuard />
-          <CookieBanner />
+          {typeof window !== "undefined" && <CookieBanner />}
         </div>
       </body>
     </html>
