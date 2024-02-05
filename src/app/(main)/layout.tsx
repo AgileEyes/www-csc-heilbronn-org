@@ -28,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <GoogleAnalytics GA_MEASUREMENT_ID="G-GV1MVJLQV5" />
+
       <body className={alumniSans.className}>
         <Navigation />
 
@@ -41,7 +42,7 @@ export default function RootLayout({
           <Footer />
 
           <AgeGuard />
-          <CookieBanner />
+          {typeof window !== "undefined" && <CookieBanner />}
         </div>
       </body>
     </html>

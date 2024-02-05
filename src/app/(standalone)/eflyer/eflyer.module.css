@@ -1,0 +1,154 @@
+.container {
+  background-color: #000000;
+  background-image: url("/images/eflyer/background.png");
+  background-size: contain;
+
+  /* min-width: 300px; */
+  /* min-height: 855px; */
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  top: 72px;
+
+  border: 2px solid #ebdba133;
+
+  background-color: #0a0a0acc;
+  background-image: url("/images/eflyer/bud.png");
+  background-size: calc(100% / 2);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  position: relative;
+  top: -66px;
+  margin-bottom: -72px;
+
+  /* background-image: url("/images/logo/logo_v2_large.svg");
+  width: 124px;
+  height: 124px; */
+}
+
+.title {
+  color: #ffffff;
+
+  font-size: 20;
+  font-weight: bold;
+
+  text-align: center;
+}
+
+.aboutus {
+  padding: 0 8px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  color: #aca281;
+
+  font-weight: normal;
+  font-size: 18;
+
+  text-align: center;
+}
+
+.aboutus_item {
+}
+
+.membership {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+
+  padding: 8px 16px;
+
+  width: 100%;
+
+  border: 2px solid #ebdba133;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.membership_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.membership_title {
+  color: #ffffff;
+
+  font-size: 18;
+  font-weight: bold;
+}
+
+.membership_subtitle {
+  color: #bbbbbb;
+
+  font-size: 18;
+  font-weight: normal;
+}
+
+.benefits {
+  align-self: flex-start;
+
+  max-width: 50%;
+
+  font-size: 16px;
+  font-weight: normal;
+
+  color: #ffffff;
+}
+
+.sub_benefits {
+  padding: 0;
+  margin-left: 12px;
+}
+
+.decent {
+  color: #a9a9a9;
+}
+
+.links {
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4px;
+
+  padding-left: 24px;
+
+  font-weight: bold;
+}
+
+.become_member,
+.become_member:active {
+  padding: 12px 24px;
+
+  color: #000000;
+
+  text-decoration: none;
+  background-color: #ebdba1;
+
+  border: 1px solid #8d8367;
+  border-radius: 8px;
+}
+
+.become_member:hover {
+  color: #ebdba1;
+  background-color: #000000;
+}
+
+.more_information,
+.more_information:hover,
+.more_information:active {
+  color: #e1e1e1;
+  text-decoration: none;
+}
