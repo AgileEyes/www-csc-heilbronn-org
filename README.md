@@ -3,7 +3,7 @@
 ## Colors
 
 | Name      | Hex    | RGB           |
-|-----------|--------|---------------|
+| --------- | ------ | ------------- |
 | Accent    | DAC7A4 | 218, 199, 164 |
 | Primary   | 686C54 | 104, 108, 84  |
 | Secondary | 8E8568 | 142, 133, 104 |
@@ -13,13 +13,12 @@
 | Dark      | 000000 | 0, 0, 0       |
 | Header    | D9D9D9 | 217, 217, 217 |
 
-
 # How To
-- Search and Replace class names generated when exporting from Google Docs:
-    - Search for regex: `class="([c]+[a-zA-Z0-9_.-]*)"`
-    - Replace with regex: `className={classNames.$1}`
-    - Add `.container` parent selector to non-pure selectors, e.g.: `.container h6`
 
+- Search and Replace class names generated when exporting from Google Docs:
+  - Search for regex: `class="([c]+[a-zA-Z0-9_.-]*)"`
+  - Replace with regex: `className={classNames.$1}`
+  - Add `.container` parent selector to non-pure selectors, e.g.: `.container h6`
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
@@ -55,3 +54,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# Favicons
+
+- https://realfavicongenerator.net/
