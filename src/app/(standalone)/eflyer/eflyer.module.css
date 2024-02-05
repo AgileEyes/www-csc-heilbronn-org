@@ -3,8 +3,7 @@
   background-image: url("/images/eflyer/background.png");
   background-size: contain;
 
-  /* min-width: 300px; */
-  /* min-height: 855px; */
+  max-width: 400px;
 }
 
 .frame {
